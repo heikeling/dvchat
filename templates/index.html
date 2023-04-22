@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" href="favicon.ico" sizes="16x16">
+    <title>Cnchat-聊天机器人</title>
+</head>
+<body background="http://img.oulu.me/010%20Winter%20Neva.png" 
+    style="background-repeat:no-repeat
+    background-attachment:fixed;
+    background-size:100% 100%; ">
+    <style>
+        .inputText{
+            width: 450px;
+            height: 50px;
+            line-height: 30px;
+            font-size: 30px;
+            padding-left: 30px;
+            border-radius: 50px;
+            background-color: gainsboro;
+            border: none;
+        }
+        .inputText:focus{
+            outline: none;//设置所有的轮廓属性为none
+            background-color: lightblue;
+        }
+        .btn{
+            width: 150px;
+            height: 50px;
+            border: none;
+            background-color: green;
+            line-height: 50px;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            border-radius: 50px;
+        }
+        .btn:focus{
+            outline: none;
+        }
+        .btn-primary{
+            background-color: blue;
+        }
+        .btn-success{
+            background-color: green;
+        }
+        .btn-warning{
+            background-color: yellow;
+        }
+        .btn-danger{
+            background-color: red;
+        }
+    </style>
+    <div style="width:350px;height:80px;margin: auto;font-size: 40px;margin: auto; ">
+    </div>
+    <div style="width: 600px;height: 600px;margin: auto">
+        <form action="/" method="get" >
+            <div>
+                <textarea  name="password" id="password" style="border:0;border-radius:5px;background-color:rgba(241,241,241,.98);width: 500px;height: 600px;padding: 10px;resize: none;" placeholder="聊天信息框">{{texts}}</textarea>
+                </br>
+                <input name="ky" id="ky" type="text" class="inputText">
+                <input type="submit" value="提交" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
