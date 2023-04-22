@@ -1,4 +1,3 @@
-import tkinter as tk
 import artitle as at
 import random as rd
 import json
